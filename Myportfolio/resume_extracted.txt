@@ -1,0 +1,28 @@
+Bharath T J
+♂phone+91 6360592938/envel⌢pebharathtj77@gmail.com/linkedinbharath-t-j-788b47375/githubbharathtj77
+Skills
+•Programming:Python (NumPy, Pandas, Matplotlib)
+•Frontend:HTML, CSS, React
+•Backend:Node.js, Python
+•Database:MySQL, MongoDB, PostgreSQL
+•Core:DSA (Python)
+Projects
+PID Line-Following Robot 6 months
+Tech:IoT, Embedded C
+•Designed and developed an autonomous line-following robot using aPID control algorithmfor accurate path tracking.
+•Integrated IR sensors with an Arduino-based control system and tuned PID parameters to improve movement stability
+and response.
+KishanLink 24 hours
+Tech:HTML, CSS, Node.js, REST API, SQL, Power BI
+•Developed a data-driven platform connecting farmers with market opportunities usingREST APIs, SQL, and Power
+BI.
+•Built a responsive frontend and backend workflow to manage agricultural data and generate actionable insights.
+Experiences
+•Student Developer– Currently building practical projects inData Science, Python, Web Development, and IoT.
+Achievements
+•Secured qualification forSmart India Hackathon (SIH) 2026.
+•Achieved3-Star rating in Pythonon HackerRank.
+Education
+B.E. in Computer Science (Data Science)2025–2029
+Adichunchanagiri Institute of Technology (AIT), Chikkamagaluru, India
+CGPA: 9.21/10

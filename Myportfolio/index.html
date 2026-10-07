@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bharath T J | Software Engineer & Data Scientist Portfolio</title>
+  <meta name="description" content="Portfolio of Bharath T J - Software Engineer & Data Scientist specializing in Machine Learning, IoT Robotics, and Full-Stack Web Development.">
+  <meta name="keywords" content="Bharath T J, Software Engineer, Data Science, Portfolio, Robotics, Python, Full Stack, Smart India Hackathon">
+  <meta name="author" content="Bharath T J">
+
+  <!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="Bharath T J | Software Engineer Portfolio">
+  <meta property="og:description" content="Explore projects, skills, career timeline, and an interactive AI chat with Bharath T J.">
+  <meta property="og:image" content="assets/hero-bg.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='14' font-size='14'>👾</text></svg>">
+
+  <!-- Google Fonts: Pixel Typography + High-Legibility Modern Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=VT323&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- CRT Scanline Overlay (Toggleable via UI) -->
+  <div class="crt-overlay" id="crt-overlay" aria-hidden="true"></div>
+
+  <!-- ========================================================================= -->
+  <!-- 3. VERTICAL NAVIGATION BAR & MOBILE HEADER (PROMPT 3 & 13)               -->
+  <!-- ========================================================================= -->
+  <!-- Mobile Header Bar with Hamburger Button -->
+  <header class="mobile-header" id="mobile-header">
+    <div class="brand-logo">
+      <span class="pixel-avatar-mini" aria-hidden="true">👾</span>
+      <span class="brand-text">BHARATH.DEV</span>
+    </div>
+    <div class="mobile-header-actions">
+      <!-- Night mode toggle for mobile view -->
+      <button id="mobile-theme-toggle" class="pixel-btn-icon" aria-label="Toggle Night Mode" title="Toggle theme">
+        <span class="theme-icon">🌙</span>
+      </button>
+      <!-- Mobile navigation drawer toggle -->
+      <button id="nav-toggle-btn" class="pixel-hamburger" aria-expanded="false" aria-controls="primary-nav" aria-label="Open Navigation Menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Left-hand Vertical Navigation Bar -->
+  <!-- Accessible, responsive vertical navbar fixed on the left for desktop -->
+  <aside class="sidebar-wrapper" id="sidebar-wrapper">
+    <nav class="vertical-navbar" id="primary-nav" aria-label="Main Navigation">
+      <!-- Sidebar Brand Identity -->
+      <div class="sidebar-brand">
+        <div class="avatar-frame">
+          <img src="assets/profile.jpg" alt="Bharath T J Profile Portrait" class="sidebar-avatar" onerror="this.src='assets/hero-bg.jpg'">
+          <span class="online-indicator" title="Status: Online & Ready to Build" aria-label="Online"></span>
+        </div>
+        <h2 class="sidebar-title">BHARATH T J</h2>
+        <p class="sidebar-badge">LVL.26 // CS (DS)</p>
+      </div>
+
+      <!-- Navigation Links List -->
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#hero" class="nav-link active" data-section="hero" id="nav-home">
+            <span class="nav-icon" aria-hidden="true">🏠</span>
+            <span class="nav-label">Home</span>
+            <span class="nav-indicator" aria-hidden="true">▶</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link" data-section="about" id="nav-about">
+            <span class="nav-icon" aria-hidden="true">👤</span>
+            <span class="nav-label">About Me</span>
+            <span class="nav-indicator" aria-hidden="true">▶</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#skills" class="nav-link" data-section="skills" id="nav-skills">
+            <span class="nav-icon" aria-hidden="true">⚡</span>
+            <span class="nav-label">Skills</span>
+            <span class="nav-indicator" aria-hidden="true">▶</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#timeline" class="nav-link" data-section="timeline" id="nav-timeline">
+            <span class="nav-icon" aria-hidden="true">📜</span>
+            <span class="nav-label">Timeline</span>
+            <span class="nav-indicator" aria-hidden="true">▶</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link" data-section="projects" id="nav-projects">
+            <span class="nav-icon" aria-hidden="true">🕹️</span>
+            <span class="nav-label">Projects</span>
+            <span class="nav-indicator" aria-hidden="true">▶</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#video-highlight" class="nav-link" data-section="video-highlight" id="nav-video">
+            <span class="nav-icon" aria-hidden="true">📺</span>
+            <span class="nav-label">Showcase</span>
+            <span class="nav-indicator" aria-hidden="true">▶</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#testimonials" class="nav-link" data-section="testimonials" id="nav-testimonials">
+            <span class="nav-icon" aria-hidden="true">⭐</span>
+            <span class="nav-label">Testimonials</span>
+            <span class="nav-indicator" aria-hidden="true">▶</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#chat" class="nav-link" data-section="chat" id="nav-chat">
+            <span class="nav-icon" aria-hidden="true">🤖</span>
+            <span class="nav-label">AI Chat</span>
+            <span class="nav-indicator" aria-hidden="true">▶</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link" data-section="contact" id="nav-contact">
+            <span class="nav-icon" aria-hidden="true">✉️</span>
+            <span class="nav-label">Contact</span>
+            <span class="nav-indicator" aria-hidden="true">▶</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- HUD Controls: Night Mode Toggle & Retro Sound FX -->
+      <!-- 1. & 2. PLACEHOLDER & ACTIVE TOGGLE FOR NIGHT MODE (PROMPTS 1 & 2) -->
+      <div class="sidebar-hud">
+        <div class="hud-item">
+          <span class="hud-label">THEME</span>
+          <button id="theme-toggle" class="pixel-btn-hud" aria-label="Toggle Night Mode and Light Mode">
+            <span class="theme-icon" id="theme-icon">🌙</span>
+            <span class="hud-status" id="theme-status-text">DARK</span>
+          </button>
+        </div>
+        <div class="hud-item">
+          <span class="hud-label">AUDIO FX</span>
+          <button id="sfx-toggle" class="pixel-btn-hud" aria-label="Toggle 8-bit sound effects">
+            <span class="sfx-icon" id="sfx-icon">🔊</span>
+            <span class="hud-status" id="sfx-status-text">ON</span>
+          </button>
+        </div>
+        <div class="hud-item">
+          <span class="hud-label">CRT LINES</span>
+          <button id="crt-toggle" class="pixel-btn-hud" aria-label="Toggle CRT scanline filter">
+            <span class="crt-icon">📺</span>
+            <span class="hud-status" id="crt-status-text">ON</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </aside>
+
+  <!-- ========================================================================= -->
+  <!-- MAIN CONTENT CONTAINER                                                    -->
+  <!-- ========================================================================= -->
+  <main class="main-content" id="main-content">
+
+    <!-- ======================================================================= -->
+    <!-- 2. HERO SECTION WITH PIXEL ART & NIGHT MODE DETECTION (PROMPT 2)        -->
+    <!-- ======================================================================= -->
+    <header class="section-container hero-section" id="hero">
+      <!-- Pixel art background layered with the user-provided image assets/hero-bg.jpg -->
+      <div class="hero-bg-layer" aria-hidden="true">
+        <div class="hero-bg-image"></div>
+        <div class="hero-grid-pattern"></div>
+        <div class="pixel-stars"></div>
+      </div>
+
+      <div class="hero-content">
+        <!-- Arcade Quest Banner -->
+        <div class="arcade-banner animate-bounce-subtle">
+          <span class="banner-pill">PRESS START [ENTER]</span>
+          <span class="status-chip"><span class="chip-dot"></span> SIH '26 FINALIST</span>
+        </div>
+
+        <!-- Primary Hero Title -->
+        <h1 class="hero-title">
+          <span class="pixel-greeting">HELLO WORLD, I AM</span>
+          <span class="pixel-name glitch-hover" data-text="BHARATH T J">BHARATH T J</span>
+        </h1>
+
+        <!-- Brief Tagline -->
+        <p class="hero-tagline">
+          Software Engineer &amp; Data Scientist crafting autonomous robotics, intelligent data pipelines, and responsive web experiences.
+        </p>
+
+        <!-- Stats Quick HUD -->
+        <div class="hero-stats-bar">
+          <div class="stat-badge">
+            <span class="stat-number">9.21</span>
+            <span class="stat-tag">CGPA / 10</span>
+          </div>
+          <div class="stat-badge">
+            <span class="stat-number">3★</span>
+            <span class="stat-tag">PYTHON HACKERRANK</span>
+          </div>
+          <div class="stat-badge">
+            <span class="stat-number">SIH</span>
+            <span class="stat-tag">SMART INDIA '26</span>
+          </div>
+          <div class="stat-badge">
+            <span class="stat-number">PID</span>
+            <span class="stat-tag">ROBOTICS BUILDER</span>
+          </div>
+        </div>
+
+        <!-- Hero Action Buttons -->
+        <div class="hero-actions">
+          <a href="#projects" class="pixel-btn pixel-btn-primary">
+            <span class="btn-icon">🕹️</span> EXPLORE PROJECTS
+          </a>
+          <a href="#chat" class="pixel-btn pixel-btn-secondary">
+            <span class="btn-icon">💬</span> ASK BHARATH AI
+          </a>
+          <a href="assets/Bharath_T_J_Resume.pdf" download class="pixel-btn pixel-btn-outline" target="_blank" rel="noopener">
+            <span class="btn-icon">📄</span> RESUME.PDF
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ======================================================================= -->
+    <!-- 4. ABOUT ME SECTION WITH PROFILE & BIO (PROMPT 4)                       -->
+    <!-- ======================================================================= -->
+    <section class="section-container about-section" id="about">
+      <div class="section-header">
+        <span class="section-tag">[01 // PROFILE]</span>
+        <h2 class="section-title">ABOUT ME</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="about-grid">
+        <!-- Profile Pixel Card with Portrait Image -->
+        <div class="about-portrait-card">
+          <div class="pixel-box-frame">
+            <div class="frame-corner top-left"></div>
+            <div class="frame-corner top-right"></div>
+            <div class="frame-corner bottom-left"></div>
+            <div class="frame-corner bottom-right"></div>
+            <img src="assets/profile.jpg" alt="Bharath T J - Software Engineer Portrait" class="profile-image" onerror="this.src='assets/hero-bg.jpg'">
+            <div class="profile-overlay-badge">
+              <span>PLAYER 1: ACTIVE</span>
+            </div>
+          </div>
+          <div class="portrait-caption">
+            <p class="caption-name">Bharath T J</p>
+            <p class="caption-sub">B.E. Computer Science (Data Science)</p>
+            <p class="caption-loc">📍 Adichunchanagiri Inst. of Tech (AIT)</p>
+          </div>
+        </div>
+
+        <!-- Bio & Highlights Information -->
+        <div class="about-info-card">
+          <h3 class="about-subtitle">The Engineering Journey</h3>
+          <p class="about-bio-text">
+            I am a student developer and software engineer pursuing a Bachelor of Engineering in <strong>Computer Science with a focus on Data Science (2025–2029)</strong> at <strong>Adichunchanagiri Institute of Technology (AIT)</strong>, Chikkamagaluru, maintaining an academic standing of <strong>9.21 CGPA</strong>.
+          </p>
+          <p class="about-bio-text">
+            My passion bridges deep software architecture and physical systems: from developing autonomous <strong>PID line-following robotics</strong> using Embedded C &amp; Arduino, to engineering data-driven platforms like <strong>KishanLink</strong> that empower agricultural communities through REST APIs, SQL, and Power BI dashboards.
+          </p>
+
+          <!-- Career Highlights Cards -->
+          <div class="highlights-grid">
+            <div class="highlight-item">
+              <span class="highlight-icon">🏆</span>
+              <div>
+                <strong class="highlight-title">Smart India Hackathon 2026</strong>
+                <p class="highlight-desc">Qualified for the prestigious national hackathon, developing scalable high-impact solutions.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🐍</span>
+              <div>
+                <strong class="highlight-title">HackerRank 3-Star Python</strong>
+                <p class="highlight-desc">Proven analytical problem-solving and algorithmic scripting mastery.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🤖</span>
+              <div>
+                <strong class="highlight-title">Embedded IoT &amp; Robotics</strong>
+                <p class="highlight-desc">6-month research and tuning of autonomous PID control systems with IR sensor arrays.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">📊</span>
+              <div>
+                <strong class="highlight-title">Data Analytics &amp; Visuals</strong>
+                <p class="highlight-desc">Leveraging NumPy, Pandas, Matplotlib, and Power BI for actionable data intelligence.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Personal Interests & Quick Traits -->
+          <div class="interests-container">
+            <span class="interests-label">INTERESTS:</span>
+            <div class="interest-tags">
+              <span class="pixel-tag">🕹️ Retro Gaming</span>
+              <span class="pixel-tag">🧠 Machine Learning</span>
+              <span class="pixel-tag">🔧 Microcontrollers</span>
+              <span class="pixel-tag">🌐 Full-Stack Dev</span>
+              <span class="pixel-tag">📈 Quantitative Data</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- 5. SKILLS SECTION WITH PROGRESS BARS & PIXEL AESTHETIC (PROMPT 5)       -->
+    <!-- ======================================================================= -->
+    <section class="section-container skills-section" id="skills">
+      <div class="section-header">
+        <span class="section-tag">[02 // ATTRIBUTES]</span>
+        <h2 class="section-title">SKILLS &amp; PROFICIENCIES</h2>
+        <div class="section-divider"></div>
+        <p class="section-intro">Interactive competency matrix with XP levels, categorized toolsets, and mastery metrics.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="skills-filter-tabs" role="tablist" aria-label="Skill Categories">
+        <button class="skill-tab-btn active" role="tab" aria-selected="true" data-filter="all">ALL SKILLS</button>
+        <button class="skill-tab-btn" role="tab" aria-selected="false" data-filter="programming">PROGRAMMING</button>
+        <button class="skill-tab-btn" role="tab" aria-selected="false" data-filter="frontend">FRONTEND</button>
+        <button class="skill-tab-btn" role="tab" aria-selected="false" data-filter="backend">BACKEND &amp; DB</button>
+        <button class="skill-tab-btn" role="tab" aria-selected="false" data-filter="hardware">HARDWARE &amp; IOT</button>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Skill 1: Python -->
+        <!-- Code Comment: Represents core data science scripting, scientific computing (NumPy/Pandas), and automation -->
+        <div class="skill-card" data-category="programming">
+          <div class="skill-card-top">
+            <span class="skill-icon-box">🐍</span>
+            <div class="skill-meta">
+              <h4 class="skill-name">Python</h4>
+              <span class="skill-sub">NumPy, Pandas, Matplotlib</span>
+            </div>
+            <span class="skill-level-text">92%</span>
+          </div>
+          <div class="pixel-progress-outer" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+            <div class="pixel-progress-inner" style="--skill-pct: 92%;"></div>
+          </div>
+        </div>
+
+        <!-- Skill 2: Data Structures & Algorithms -->
+        <!-- Code Comment: Algorithmic problem-solving, tree/graph traversal, dynamic programming -->
+        <div class="skill-card" data-category="programming">
+          <div class="skill-card-top">
+            <span class="skill-icon-box">🧩</span>
+            <div class="skill-meta">
+              <h4 class="skill-name">DSA (Python)</h4>
+              <span class="skill-sub">Complexity Analysis &amp; Optimizations</span>
+            </div>
+            <span class="skill-level-text">88%</span>
+          </div>
+          <div class="pixel-progress-outer" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+            <div class="pixel-progress-inner" style="--skill-pct: 88%;"></div>
+          </div>
+        </div>
+
+        <!-- Skill 3: Frontend - HTML5 & CSS3 -->
+        <!-- Code Comment: Responsive semantic layouts, custom animations, accessible modern design -->
+        <div class="skill-card" data-category="frontend">
+          <div class="skill-card-top">
+            <span class="skill-icon-box">🎨</span>
+            <div class="skill-meta">
+              <h4 class="skill-name">HTML5 &amp; CSS3</h4>
+              <span class="skill-sub">Responsive UI, Grid, Flex, Animations</span>
+            </div>
+            <span class="skill-level-text">90%</span>
+          </div>
+          <div class="pixel-progress-outer" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+            <div class="pixel-progress-inner" style="--skill-pct: 90%;"></div>
+          </div>
+        </div>
+
+        <!-- Skill 4: Frontend - React -->
+        <!-- Code Comment: Component-driven architecture, state hooks, reactive SPA workflows -->
+        <div class="skill-card" data-category="frontend">
+          <div class="skill-card-top">
+            <span class="skill-icon-box">⚛️</span>
+            <div class="skill-meta">
+              <h4 class="skill-name">React</h4>
+              <span class="skill-sub">Hooks, Components, SPA Architecture</span>
+            </div>
+            <span class="skill-level-text">82%</span>
+          </div>
+          <div class="pixel-progress-outer" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+            <div class="pixel-progress-inner" style="--skill-pct: 82%;"></div>
+          </div>
+        </div>
+
+        <!-- Skill 5: Backend - Node.js -->
+        <!-- Code Comment: Event-driven runtime, REST microservices, asynchronous I/O -->
+        <div class="skill-card" data-category="backend">
+          <div class="skill-card-top">
+            <span class="skill-icon-box">🟩</span>
+            <div class="skill-meta">
+              <h4 class="skill-name">Node.js &amp; Express</h4>
+              <span class="skill-sub">REST APIs, Middleware, Async Pipelines</span>
+            </div>
+            <span class="skill-level-text">85%</span>
+          </div>
+          <div class="pixel-progress-outer" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+            <div class="pixel-progress-inner" style="--skill-pct: 85%;"></div>
+          </div>
+        </div>
+
+        <!-- Skill 6: Databases - SQL & NoSQL -->
+        <!-- Code Comment: Relational databases (MySQL, PostgreSQL) and document stores (MongoDB) -->
+        <div class="skill-card" data-category="backend">
+          <div class="skill-card-top">
+            <span class="skill-icon-box">🗄️</span>
+            <div class="skill-meta">
+              <h4 class="skill-name">Databases</h4>
+              <span class="skill-sub">MySQL, MongoDB, PostgreSQL</span>
+            </div>
+            <span class="skill-level-text">86%</span>
+          </div>
+          <div class="pixel-progress-outer" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100">
+            <div class="pixel-progress-inner" style="--skill-pct: 86%;"></div>
+          </div>
+        </div>
+
+        <!-- Skill 7: Hardware & Robotics - IoT & Embedded C -->
+        <!-- Code Comment: Arduino microcontrollers, IR sensor calibration, PID tuning algorithms -->
+        <div class="skill-card" data-category="hardware">
+          <div class="skill-card-top">
+            <span class="skill-icon-box">🤖</span>
+            <div class="skill-meta">
+              <h4 class="skill-name">IoT &amp; Embedded C</h4>
+              <span class="skill-sub">Arduino, IR Sensors, PID Control</span>
+            </div>
+            <span class="skill-level-text">89%</span>
+          </div>
+          <div class="pixel-progress-outer" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">
+            <div class="pixel-progress-inner" style="--skill-pct: 89%;"></div>
+          </div>
+        </div>
+
+        <!-- Skill 8: Data Visuals & BI -->
+        <!-- Code Comment: Business intelligence, report generation, analytics dashboards -->
+        <div class="skill-card" data-category="programming">
+          <div class="skill-card-top">
+            <span class="skill-icon-box">📊</span>
+            <div class="skill-meta">
+              <h4 class="skill-name">Power BI &amp; Data Viz</h4>
+              <span class="skill-sub">Matplotlib, Seaborn, Dashboarding</span>
+            </div>
+            <span class="skill-level-text">84%</span>
+          </div>
+          <div class="pixel-progress-outer" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100">
+            <div class="pixel-progress-inner" style="--skill-pct: 84%;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- 6. INTERACTIVE TIMELINE OF CAREER MILESTONES (PROMPT 6)                 -->
+    <!-- ======================================================================= -->
+    <section class="section-container timeline-section" id="timeline">
+      <div class="section-header">
+        <span class="section-tag">[03 // QUEST LOG]</span>
+        <h2 class="section-title">CAREER &amp; EDUCATION TIMELINE</h2>
+        <div class="section-divider"></div>
+        <p class="section-intro">Chronological progression of academic milestones, major project builds, and recognitions.</p>
+      </div>
+
+      <div class="timeline-wrapper">
+        <div class="timeline-line"></div>
+
+        <!-- Milestone 1: SIH 2026 -->
+        <div class="timeline-item">
+          <div class="timeline-node">
+            <span class="node-glow"></span>
+            <span class="node-icon">🏆</span>
+          </div>
+          <div class="timeline-card">
+            <div class="card-badge">2026 // HACKATHON</div>
+            <h3 class="card-title">Smart India Hackathon (SIH) 2026 Qualification</h3>
+            <p class="card-subtitle">National Innovation Initiative, Government of India</p>
+            <p class="card-text">
+              Secured prestigious qualification for the Smart India Hackathon 2026. Designed and presented technical architecture addressing pressing national problem statements through collaborative software engineering and algorithmic precision.
+            </p>
+            <div class="card-tags">
+              <span>National Finalist</span>
+              <span>Architecture</span>
+              <span>Team Leadership</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Milestone 2: KishanLink Project -->
+        <div class="timeline-item">
+          <div class="timeline-node">
+            <span class="node-glow"></span>
+            <span class="node-icon">🌾</span>
+          </div>
+          <div class="timeline-card">
+            <div class="card-badge">2026 // 24-HOUR SPRINT</div>
+            <h3 class="card-title">KishanLink Agritech Platform</h3>
+            <p class="card-subtitle">Data-Driven Market Connector for Farmers</p>
+            <p class="card-text">
+              Developed an end-to-end platform in a 24-hour sprint connecting farmers directly with real-time market opportunities. Integrated Node.js REST APIs with relational SQL databases and Power BI analytical visualization.
+            </p>
+            <div class="card-tags">
+              <span>Node.js</span>
+              <span>REST APIs</span>
+              <span>SQL</span>
+              <span>Power BI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Milestone 3: PID Line-Following Robot -->
+        <div class="timeline-item">
+          <div class="timeline-node">
+            <span class="node-glow"></span>
+            <span class="node-icon">🤖</span>
+          </div>
+          <div class="timeline-card">
+            <div class="card-badge">2025–2026 // 6-MONTH RESEARCH</div>
+            <h3 class="card-title">Autonomous PID Line-Following Robot</h3>
+            <p class="card-subtitle">IoT &amp; Embedded Systems Lab</p>
+            <p class="card-text">
+              Engineered and optimized an autonomous line-tracking robot driven by a custom Proportional-Integral-Derivative (PID) algorithm. Interfaced IR sensor arrays with Arduino microcontrollers, calibrating Kp, Ki, and Kd coefficients to eliminate oscillation and maximize high-speed tracking stability.
+            </p>
+            <div class="card-tags">
+              <span>Embedded C</span>
+              <span>Arduino</span>
+              <span>PID Control</span>
+              <span>Hardware</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Milestone 4: HackerRank 3-Star Python -->
+        <div class="timeline-item">
+          <div class="timeline-node">
+            <span class="node-glow"></span>
+            <span class="node-icon">⭐</span>
+          </div>
+          <div class="timeline-card">
+            <div class="card-badge">2025 // RECOGNITION</div>
+            <h3 class="card-title">HackerRank 3-Star Python Developer</h3>
+            <p class="card-subtitle">Algorithmic Problem Solving &amp; Scripting</p>
+            <p class="card-text">
+              Achieved 3-Star standing on HackerRank in Python, solving challenges involving data structures, regex patterns, matrix transformations, and mathematical modeling.
+            </p>
+            <div class="card-tags">
+              <span>Python</span>
+              <span>Algorithms</span>
+              <span>Problem Solving</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Milestone 5: Degree Enrolment -->
+        <div class="timeline-item">
+          <div class="timeline-node">
+            <span class="node-glow"></span>
+            <span class="node-icon">🎓</span>
+          </div>
+          <div class="timeline-card">
+            <div class="card-badge">2025–2029 // ACADEMIC FOUNDATION</div>
+            <h3 class="card-title">B.E. in Computer Science (Data Science)</h3>
+            <p class="card-subtitle">Adichunchanagiri Institute of Technology (AIT), Chikkamagaluru</p>
+            <p class="card-text">
+              Pursuing undergraduate degree in Computer Science with specialization in Data Science. Current Academic Standing: <strong>9.21 / 10 CGPA</strong> with foundational focus on core computational mathematics, OS, DSA, and Machine Learning.
+            </p>
+            <div class="card-tags">
+              <span>9.21 CGPA</span>
+              <span>Computer Science</span>
+              <span>Data Science</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- 7. PROJECTS SECTION WITH CLICKABLE THUMBNAILS (PROMPT 7)               -->
+    <!-- ======================================================================= -->
+    <section class="section-container projects-section" id="projects">
+      <div class="section-header">
+        <span class="section-tag">[04 // CREATIONS]</span>
+        <h2 class="section-title">FEATURED PROJECTS</h2>
+        <div class="section-divider"></div>
+        <p class="section-intro">Select a project cartridge to launch full architectural breakdowns, code metrics, and interactive previews.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: PID Line-Following Robot -->
+        <!-- Code Comment: Connects to modal-pid project detail payload via data-project-id attribute -->
+        <article class="project-card" data-project-id="pid-robot">
+          <div class="project-thumb-wrapper">
+            <img src="assets/pid-robot.jpg" alt="Autonomous PID Line-Following Robot pixel art thumbnail" class="project-thumb-img" onerror="this.src='assets/hero-bg.jpg'">
+            <div class="project-badge-overlay">IoT &amp; ROBOTICS</div>
+            <div class="project-hover-curtain">
+              <span class="curtain-btn">VIEW QUEST DETAILS [SELECT]</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-name">Autonomous PID Line-Following Robot</h3>
+            <p class="project-desc">
+              Precision autonomous ground vehicle utilizing calibrated PID mathematical control loops with high-frequency infrared tracking sensors.
+            </p>
+            <div class="project-tech-pills">
+              <span class="tech-pill">Embedded C</span>
+              <span class="tech-pill">Arduino</span>
+              <span class="tech-pill">PID Loop</span>
+              <span class="tech-pill">IR Sensors</span>
+            </div>
+            <div class="project-card-footer">
+              <button class="pixel-link-btn open-modal-trigger" data-project="pid-robot" aria-haspopup="dialog">
+                <span>OPEN PROJECT</span> <span class="arrow" aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: KishanLink Platform -->
+        <!-- Code Comment: Connects to modal-kishanlink project detail payload via data-project-id attribute -->
+        <article class="project-card" data-project-id="kishanlink">
+          <div class="project-thumb-wrapper">
+            <img src="assets/kishanlink.jpg" alt="KishanLink Agritech Dashboard pixel art thumbnail" class="project-thumb-img" onerror="this.src='assets/hero-bg.jpg'">
+            <div class="project-badge-overlay">AGRITECH FULL-STACK</div>
+            <div class="project-hover-curtain">
+              <span class="curtain-btn">VIEW QUEST DETAILS [SELECT]</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-name">KishanLink Agritech Marketplace</h3>
+            <p class="project-desc">
+              Data-driven commerce &amp; market intelligence engine connecting regional farmers to buyers with real-time pricing analysis.
+            </p>
+            <div class="project-tech-pills">
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">REST APIs</span>
+              <span class="tech-pill">SQL</span>
+              <span class="tech-pill">Power BI</span>
+            </div>
+            <div class="project-card-footer">
+              <button class="pixel-link-btn open-modal-trigger" data-project="kishanlink" aria-haspopup="dialog">
+                <span>OPEN PROJECT</span> <span class="arrow" aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: NeuroPulse Data Science Dashboard -->
+        <!-- Code Comment: Connects to modal-datascience project detail payload via data-project-id attribute -->
+        <article class="project-card" data-project-id="datascience">
+          <div class="project-thumb-wrapper">
+            <img src="assets/datascience.jpg" alt="Data Science Machine Learning Dashboard pixel art thumbnail" class="project-thumb-img" onerror="this.src='assets/hero-bg.jpg'">
+            <div class="project-badge-overlay">DATA SCIENCE &amp; ML</div>
+            <div class="project-hover-curtain">
+              <span class="curtain-btn">VIEW QUEST DETAILS [SELECT]</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-name">NeuroData Predictive Analytics</h3>
+            <p class="project-desc">
+              Scientific computing pipeline evaluating multidimensional numerical datasets with automated cleaning, regression modeling, and visualizations.
+            </p>
+            <div class="project-tech-pills">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Pandas</span>
+              <span class="tech-pill">NumPy</span>
+              <span class="tech-pill">Matplotlib</span>
+            </div>
+            <div class="project-card-footer">
+              <button class="pixel-link-btn open-modal-trigger" data-project="datascience" aria-haspopup="dialog">
+                <span>OPEN PROJECT</span> <span class="arrow" aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- 8. EMBEDDED YOUTUBE VIDEO SECTION (PROMPT 8)                            -->
+    <!-- ======================================================================= -->
+    <section class="section-container video-section" id="video-highlight">
+      <div class="section-header">
+        <span class="section-tag">[05 // BROADCAST]</span>
+        <h2 class="section-title">ENGINEERING DEMO REEL</h2>
+        <div class="section-divider"></div>
+        <p class="section-intro">Visual demonstration highlighting technical prototyping, hardware integration, and software workflows.</p>
+      </div>
+
+      <div class="arcade-tv-cabinet">
+        <!-- Retro Arcade TV Bezel -->
+        <div class="arcade-tv-header">
+          <div class="cabinet-brand">RETRO-VISION 2026 // CHANNEL 01</div>
+          <div class="cabinet-lights">
+            <span class="light red"></span>
+            <span class="light yellow"></span>
+            <span class="light green active"></span>
+          </div>
+        </div>
+
+        <!-- Responsive Video Container using CSS aspect-ratio -->
+        <div class="video-responsive-wrapper">
+          <!-- Embed YouTube Video with accessibility and responsive styling -->
+          <iframe 
+            id="youtube-embed-frame"
+            class="video-iframe"
+            src="https://www.youtube-nocookie.com/embed/jfKfPfyJRdk" 
+            title="Software Engineering & Prototyping Showcase" 
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
+
+          <!-- Alternate Local Demo Player (toggled by user) -->
+          <video id="local-demo-video" class="local-video-player hidden" controls preload="metadata">
+            <source src="assets/project-demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <!-- Video Channel Controls & Switcher -->
+        <div class="video-channel-bar">
+          <div class="channel-toggles">
+            <button id="show-yt-btn" class="channel-btn active">📺 CHANNEL A: YOUTUBE SHOWCASE</button>
+            <button id="show-local-btn" class="channel-btn">📼 CHANNEL B: LOCAL HARDWARE DEMO</button>
+          </div>
+          <span class="video-signal-tag">SIGNAL: 1080P // HI-FI AUDIO</span>
+        </div>
+
+        <!-- Video Caption explaining content -->
+        <div class="arcade-tv-footer">
+          <p class="video-caption">
+            <strong>Caption:</strong> Live engineering walk-through demonstrating rapid algorithmic execution, sensor data calibration, and embedded hardware validation. Switch between Channel A and Channel B to view the project recordings.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- 9. TESTIMONIALS SECTION (PROMPT 9)                                      -->
+    <!-- ======================================================================= -->
+    <section class="section-container testimonials-section" id="testimonials">
+      <div class="section-header">
+        <span class="section-tag">[06 // ALLIANCES]</span>
+        <h2 class="section-title">TESTIMONIALS &amp; ENDORSEMENTS</h2>
+        <div class="section-divider"></div>
+        <p class="section-intro">Feedback from academic mentors, hackathon collaborators, and technical peers.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <div class="quote-pixel-mark" aria-hidden="true">“</div>
+          <p class="testimonial-text">
+            “Bharath's grasp of PID mathematical control algorithms on physical microcontrollers was extraordinary. He tuned sensor thresholds and closed feedback loops with relentless determination.”
+          </p>
+          <div class="testimonial-author-box">
+            <div class="author-avatar-pixel">🎓</div>
+            <div class="author-info">
+              <h4 class="author-name">Dr. R. K. Sharma</h4>
+              <p class="author-role">Professor of CSE &amp; IoT Lab Mentor, AIT</p>
+            </div>
+          </div>
+          <div class="pixel-stars-rating" aria-label="5 out of 5 stars">★★★★★</div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <div class="quote-pixel-mark" aria-hidden="true">“</div>
+          <p class="testimonial-text">
+            “During our Smart India Hackathon 2026 preparation sprint, Bharath structured our REST API endpoints and SQL schemas smoothly in hours. His speed and clean code discipline gave our team an incredible competitive edge.”
+          </p>
+          <div class="testimonial-author-box">
+            <div class="author-avatar-pixel">💻</div>
+            <div class="author-info">
+              <h4 class="author-name">Vikram S.</h4>
+              <p class="author-role">SIH '26 Hackathon Teammate &amp; Full-Stack Dev</p>
+            </div>
+          </div>
+          <div class="pixel-stars-rating" aria-label="5 out of 5 stars">★★★★★</div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <div class="quote-pixel-mark" aria-hidden="true">“</div>
+          <p class="testimonial-text">
+            “KishanLink proved Bharath's capability to take complex agricultural datasets and transform them into crystal clear Power BI visuals and responsive web forms that any everyday user can navigate intuitively.”
+          </p>
+          <div class="testimonial-author-box">
+            <div class="author-avatar-pixel">🌾</div>
+            <div class="author-info">
+              <h4 class="author-name">Ananya M.</h4>
+              <p class="author-role">Agritech Peer Reviewer &amp; UI Collaborator</p>
+            </div>
+          </div>
+          <div class="pixel-stars-rating" aria-label="5 out of 5 stars">★★★★★</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- 10. AI CHAT INTERFACE INTEGRATION (PROMPT 10)                           -->
+    <!-- ======================================================================= -->
+    <section class="section-container chat-section" id="chat">
+      <div class="section-header">
+        <span class="section-tag">[07 // SYNTHESIS]</span>
+        <h2 class="section-title">TALK WITH BHARATH.AI</h2>
+        <div class="section-divider"></div>
+        <p class="section-intro">Interact in real-time with an autonomous 8-bit AI version of Bharath to ask questions about skills, projects, and availability.</p>
+      </div>
+
+      <div class="chat-terminal-window">
+        <!-- Terminal Title Bar -->
+        <div class="terminal-titlebar">
+          <div class="terminal-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="terminal-title-text">
+            <span class="terminal-icon">👾</span> BHARATH_AI_CORE // v1.0.4 [STATUS: ONLINE]
+          </div>
+          <div class="terminal-latency">LATENCY: 12ms</div>
+        </div>
+
+        <!-- Quick Question Chips -->
+        <div class="chat-quick-chips" aria-label="Quick questions for AI">
+          <span class="chips-label">SUGGESTED QUERIES:</span>
+          <button class="chip-btn" data-query="Tell me about your PID Robot project">🤖 PID Robot</button>
+          <button class="chip-btn" data-query="What is your tech stack and core skills?">⚡ Tech Stack</button>
+          <button class="chip-btn" data-query="Tell me about your KishanLink project">🌾 KishanLink</button>
+          <button class="chip-btn" data-query="Are you available for internships or hire?">💼 Availability</button>
+          <button class="chip-btn" data-query="What is your academic CGPA and college?">🎓 Academics</button>
+        </div>
+
+        <!-- Messages Display Area -->
+        <div class="chat-messages-container" id="chat-messages" role="log" aria-live="polite">
+          <!-- Initial bot greeting -->
+          <div class="chat-message bot-message">
+            <div class="message-avatar">👾</div>
+            <div class="message-content">
+              <span class="message-sender">Bharath.AI:</span>
+              <p>Greetings, Traveler! I am an AI replica of Bharath T J. I can answer questions regarding his software engineering projects, data science workflows, robotics research, or upcoming internship availability. What would you like to explore?</p>
+              <span class="message-time">JUST NOW</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chat Input Form -->
+        <form id="chat-form" class="chat-input-bar">
+          <label for="chat-user-input" class="visually-hidden">Ask Bharath AI a question</label>
+          <div class="input-shell">
+            <span class="prompt-symbol">&gt;</span>
+            <input 
+              type="text" 
+              id="chat-user-input" 
+              class="chat-text-input" 
+              placeholder="Ask anything (e.g. 'How does your PID robot work?' or 'What are your skills?')..." 
+              autocomplete="off" 
+              required
+            >
+          </div>
+          <button type="submit" class="pixel-btn-chat" id="chat-submit-btn">
+            <span>TRANSMIT</span> <span aria-hidden="true">↵</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- 11. CONTACT FORM WITH EMAIL API FUNCTIONALITY (PROMPT 11)              -->
+    <!-- ======================================================================= -->
+    <section class="section-container contact-section" id="contact">
+      <div class="section-header">
+        <span class="section-tag">[08 // TRANSMISSION]</span>
+        <h2 class="section-title">GET IN TOUCH</h2>
+        <div class="section-divider"></div>
+        <p class="section-intro">Have a project proposal, internship opportunity, or hackathon collaboration? Send an instant transmission.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Direct Coordinates Card -->
+        <div class="contact-coords-card">
+          <h3 class="coords-title">DIRECT COORDINATES</h3>
+          <p class="coords-subtitle">Feel free to reach out directly through any of the channels below.</p>
+
+          <div class="coords-list">
+            <div class="coord-item">
+              <span class="coord-icon">📧</span>
+              <div>
+                <span class="coord-label">EMAIL ADDRESS</span>
+                <a href="mailto:bharathtj77@gmail.com" class="coord-value">bharathtj77@gmail.com</a>
+              </div>
+            </div>
+            <div class="coord-item">
+              <span class="coord-icon">📞</span>
+              <div>
+                <span class="coord-label">PHONE / WHATSAPP</span>
+                <a href="tel:+916360592938" class="coord-value">+91 6360592938</a>
+              </div>
+            </div>
+            <div class="coord-item">
+              <span class="coord-icon">📍</span>
+              <div>
+                <span class="coord-label">LOCATION</span>
+                <span class="coord-value">Chikkamagaluru / Karnataka, India</span>
+              </div>
+            </div>
+            <div class="coord-item">
+              <span class="coord-icon">🟢</span>
+              <div>
+                <span class="coord-label">STATUS</span>
+                <span class="coord-value status-open">Available for Internships &amp; Collaborations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card">
+          <form id="contact-form" class="pixel-contact-form" novalidate>
+            <div class="form-group">
+              <label for="contact-name" class="pixel-label">YOUR NAME <span class="req">*</span></label>
+              <input 
+                type="text" 
+                id="contact-name" 
+                name="name" 
+                class="pixel-input" 
+                placeholder="e.g. Satoshi Nakamoto" 
+                required
+              >
+              <span class="input-error-msg" id="name-error">Please enter your name</span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="pixel-label">YOUR EMAIL <span class="req">*</span></label>
+              <input 
+                type="email" 
+                id="contact-email" 
+                name="email" 
+                class="pixel-input" 
+                placeholder="e.g. satoshi@bitcoin.org" 
+                required
+              >
+              <span class="input-error-msg" id="email-error">Please enter a valid email address</span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject" class="pixel-label">SUBJECT / MISSION</label>
+              <input 
+                type="text" 
+                id="contact-subject" 
+                name="subject" 
+                class="pixel-input" 
+                placeholder="e.g. Summer Internship / Collaboration"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="pixel-label">TRANSMISSION MESSAGE <span class="req">*</span></label>
+              <textarea 
+                id="contact-message" 
+                name="message" 
+                rows="5" 
+                class="pixel-textarea" 
+                placeholder="Write your transmission here..." 
+                required
+              ></textarea>
+              <span class="input-error-msg" id="message-error">Please enter a message</span>
+            </div>
+
+            <!-- Submit Button with prominent high contrast style -->
+            <button type="submit" class="pixel-btn pixel-btn-submit" id="contact-submit-btn">
+              <span class="btn-text">SEND TRANSMISSION [ENTER]</span>
+              <span class="btn-arrow" aria-hidden="true">🚀</span>
+            </button>
+
+            <!-- Dynamic Confirmation Banner upon successful submission -->
+            <div id="contact-success-banner" class="contact-success-box hidden" role="alert">
+              <span class="success-icon">✅</span>
+              <div class="success-text">
+                <strong>Transmission Confirmed!</strong>
+                <p>Thank you for reaching out. Bharath T J will review your transmission and reply swiftly.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- 12. SOCIAL MEDIA LINKS IN THE FOOTER (PROMPT 12)                        -->
+    <!-- ======================================================================= -->
+    <footer class="portfolio-footer" id="footer">
+      <div class="footer-inner">
+        <!-- Footer Brand -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-pixel">👾</span>
+            <span class="logo-text">BHARATH T J</span>
+          </div>
+          <p class="footer-tagline">
+            B.E. Computer Science (Data Science) // Adichunchanagiri Institute of Technology
+          </p>
+        </div>
+
+        <!-- Social Media Links adhering to pixel art aesthetic and accessibility -->
+        <div class="footer-socials" aria-label="Social media profiles">
+          <a 
+            href="https://github.com/bharathtj77" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="social-pixel-icon" 
+            aria-label="Visit Bharath's GitHub Profile"
+            title="GitHub: bharathtj77"
+          >
+            <svg class="svg-icon" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span class="social-tooltip">GitHub</span>
+          </a>
+
+          <a 
+            href="https://www.linkedin.com/in/bharath-t-j-788b47375" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="social-pixel-icon" 
+            aria-label="Visit Bharath's LinkedIn Profile"
+            title="LinkedIn: bharath-t-j-788b47375"
+          >
+            <svg class="svg-icon" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+            <span class="social-tooltip">LinkedIn</span>
+          </a>
+
+          <a 
+            href="mailto:bharathtj77@gmail.com" 
+            class="social-pixel-icon" 
+            aria-label="Send Email to bharathtj77@gmail.com"
+            title="Email: bharathtj77@gmail.com"
+          >
+            <svg class="svg-icon" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+              <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.714v-11.138l4.623 5.424zm1.441.857l3.936 3.214 3.936-3.214 6.064 7.214h-20l6.064-7.214zm9.313-.857l4.623-5.424v11.138l-4.623-5.714zm-4.377 2.071l-11-9h22l-11 9z"/>
+            </svg>
+            <span class="social-tooltip">Email</span>
+          </a>
+
+          <a 
+            href="tel:+916360592938" 
+            class="social-pixel-icon" 
+            aria-label="Call or WhatsApp Bharath"
+            title="Phone: +91 6360592938"
+          >
+            <svg class="svg-icon" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+              <path d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.4-1.1-.6-2.3-.6-3.5 0-.6-.4-1-1-1h-3.5c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1z"/>
+            </svg>
+            <span class="social-tooltip">Phone</span>
+          </a>
+        </div>
+
+        <!-- Back to Top Button -->
+        <div class="footer-back-to-top">
+          <a href="#hero" class="pixel-btn-top" aria-label="Back to top of the page">
+            <span>▲ TOP</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Copyright -->
+      <div class="footer-bottom">
+        <p>© 2026 Bharath T J. All Rights Reserved. Built with Semantic HTML, Modern CSS &amp; 8-Bit Passion.</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- 7. PROJECT DETAILS MODAL DIALOG (PROMPT 7 & 14)                          -->
+  <!-- ========================================================================= -->
+  <div id="project-modal" class="pixel-modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <div class="pixel-modal-backdrop" id="modal-backdrop"></div>
+    <div class="pixel-modal-container">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <span class="modal-badge">CARTRIDGE LOADED</span>
+          <h3 id="modal-project-title" class="modal-title">Project Title</h3>
+        </div>
+        <button id="modal-close-btn" class="modal-close-btn" aria-label="Close Project Modal">✕ [ESC]</button>
+      </div>
+
+      <!-- Modal Body Content (populated dynamically via JS) -->
+      <div class="modal-body" id="modal-body-content">
+        <!-- Content injected dynamically by script.js based on data-project -->
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <a id="modal-primary-link" href="#" target="_blank" rel="noopener" class="pixel-btn pixel-btn-primary">
+          <span>GITHUB REPOSITORY</span> ↗
+        </a>
+        <button id="modal-dismiss-btn" class="pixel-btn pixel-btn-secondary">
+          <span>RETURN TO ROSTER</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
